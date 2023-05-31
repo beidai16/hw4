@@ -12,11 +12,11 @@ class SessionsController < ApplicationController
         redirect_to "/places"
       else
         flash["notice"] = "Incorrect password."
-        redirect_to "/sessions/new"
+        redirect_to "/login"
       end
     else
       flash["notice"] = "Username not found."
-      redirect_to "/sessions/new"
+      redirect_to "/login"
     end
   end
 
