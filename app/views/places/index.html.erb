@@ -1,3 +1,4 @@
+<% if @current_user %>
 <h1>Places</h1>
 
 <ul>
@@ -9,3 +10,6 @@
 <p>
   <a href="/places/new">New place</a>
 </p>
+<% else %>
+  <p> Please log in. </p>
+<% end %>
